@@ -61,10 +61,7 @@ extension MainViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        navigationController?.pushViewController(
-            DetailViewController(stockID: stockRows[indexPath.row].id),
-            animated: true
-        )
+        // TODO: navigate to the next screen
     }
 
 }

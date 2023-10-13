@@ -51,14 +51,14 @@ final class StocksService: StockServiceProtocol {
 
     func updateStockDetail(stockID: String, isFavorite: Bool) {
         db.collection("stocks").document(stockID).setData([
-            "isFavorite": isFavorite
+            "favorite": isFavorite
         ], merge: true) { error in
             if let error { print("Update stock error: \(error.localizedDescription)") }
         }
     }
 
     func uploadStocks() {
-        var stocks: [Stock] = [
+        let stocks: [Stock] = [
             .init(id: "id-1", title: "Tesla", symbol: "TSLA", price: 120.6, logoUrl: "https://oceansquare.com/wp-content/uploads/2018/04/tesla-logo-500.jpg", favorite: false),
             .init(id: "id-2", title: "Apple", symbol: "AAPL", price: 45.3, logoUrl: "https://i.pinimg.com/474x/b0/d2/6e/b0d26e8122dffa8a51081f7f814581d7.jpg", favorite: false),
             .init(id: "id-3", title: "Meta", symbol: "META", price: 935.2, logoUrl: "https://img.freepik.com/premium-vector/meta-company-logo_265339-667.jpg", favorite: false)

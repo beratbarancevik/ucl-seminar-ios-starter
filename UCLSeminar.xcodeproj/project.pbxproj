@@ -20,9 +20,6 @@
 		F49EE8A02AD2ACAB0018325B /* MainViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE89F2AD2ACAB0018325B /* MainViewModelTests.swift */; };
 		F49EE8A32AD2ACE20018325B /* StocksServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE8A22AD2ACE20018325B /* StocksServiceTests.swift */; };
 		F49EE8A62AD2ACEE0018325B /* StockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE8A52AD2ACEE0018325B /* StockTests.swift */; };
-		F49EE8A82AD2AD740018325B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE8A72AD2AD740018325B /* DetailViewController.swift */; };
-		F49EE8AA2AD2AD7A0018325B /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE8A92AD2AD7A0018325B /* DetailViewModel.swift */; };
-		F49EE8AC2AD2AD800018325B /* DetailViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EE8AB2AD2AD800018325B /* DetailViewState.swift */; };
 		F49EE8B02AD2BAE50018325B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F49EE8AF2AD2BAE50018325B /* Kingfisher */; };
 		F4C9A9A82AD1A4C00066B550 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C9A9A72AD1A4C00066B550 /* AppDelegate.swift */; };
 		F4C9A9AA2AD1A4C00066B550 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C9A9A92AD1A4C00066B550 /* SceneDelegate.swift */; };
@@ -61,9 +58,6 @@
 		F49EE89F2AD2ACAB0018325B /* MainViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelTests.swift; sourceTree = "<group>"; };
 		F49EE8A22AD2ACE20018325B /* StocksServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksServiceTests.swift; sourceTree = "<group>"; };
 		F49EE8A52AD2ACEE0018325B /* StockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTests.swift; sourceTree = "<group>"; };
-		F49EE8A72AD2AD740018325B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		F49EE8A92AD2AD7A0018325B /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
-		F49EE8AB2AD2AD800018325B /* DetailViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewState.swift; sourceTree = "<group>"; };
 		F4C9A9A42AD1A4C00066B550 /* UCLSeminar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UCLSeminar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C9A9A72AD1A4C00066B550 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4C9A9A92AD1A4C00066B550 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,7 +103,6 @@
 		F478DB032AD1B9A70042FB58 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				F478DB082AD1BA380042FB58 /* Detail */,
 				F478DB042AD1B9AC0042FB58 /* Main */,
 			);
 			path = Screens;
@@ -137,16 +130,6 @@
 				F4C9A9B22AD1A4C10066B550 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		F478DB082AD1BA380042FB58 /* Detail */ = {
-			isa = PBXGroup;
-			children = (
-				F49EE8A72AD2AD740018325B /* DetailViewController.swift */,
-				F49EE8A92AD2AD7A0018325B /* DetailViewModel.swift */,
-				F49EE8AB2AD2AD800018325B /* DetailViewState.swift */,
-			);
-			path = Detail;
 			sourceTree = "<group>";
 		};
 		F478DB092AD1BA600042FB58 /* Services */ = {
@@ -422,11 +405,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F49EE8A82AD2AD740018325B /* DetailViewController.swift in Sources */,
 				F4C9A9AC2AD1A4C00066B550 /* MainViewController.swift in Sources */,
 				F4C9A9A82AD1A4C00066B550 /* AppDelegate.swift in Sources */,
-				F49EE8AC2AD2AD800018325B /* DetailViewState.swift in Sources */,
-				F49EE8AA2AD2AD7A0018325B /* DetailViewModel.swift in Sources */,
 				F478DB1B2AD1ECB60042FB58 /* StockCell.swift in Sources */,
 				F478DB162AD1E88D0042FB58 /* Stock.swift in Sources */,
 				F478DB0C2AD1BA870042FB58 /* StocksService.swift in Sources */,
